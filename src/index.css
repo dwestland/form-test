@@ -1,0 +1,107 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  background: lightblue;
+}
+
+body {
+  background: white;
+  font-family: sans-serif;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 20px;
+  width: 560px;
+}
+
+
+/* Menu */
+header ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+header li {
+  margin: 0;
+}
+header a {
+  background: rgb(144, 185, 199);
+  color: #fff;
+  display: block;
+	padding: 10px;
+	text-decoration: none;
+}
+
+header .is-active {
+  background: rgb(151, 151, 151);
+}
+
+header li a:hover {
+  background-color: rgb(114, 114, 114);
+  color: white;
+}
+
+/* form */
+form {
+  border: 1px solid #a6a6a6;
+  font-size: 16px;
+  justify-content: center;
+  margin: 10px 5px;
+  width: 350px;
+}
+
+form > div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 10px 5px;
+  padding: 10px;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+  min-width: 150px;
+  text-align: right;
+  padding: 6px 9px;
+
+}
+
+input, select, textarea {
+  background-color: white;
+  border-radius: 3px;
+  cursor: text;
+  padding: 5px 10px;
+  border: 2px solid gray;
+  width : 150px;
+}
+
+::-webkit-input-placeholder {color:#c0392b;}
+::-moz-placeholder          {color:#c0392b;} /* Firefox 19+ */
+:-moz-placeholder           {color:#c0392b;} /* Firefox 18- */
+:-ms-input-placeholder      {color:#c0392b;}
+
+select {
+  cursor: pointer;
+}
+
+form button {
+  background: dodgerblue;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 10px;
+}
+
+button:disabled {
+  background: lightblue;
+  cursor: not-allowed;
+  opacity: 0.65; 
+  
+}
